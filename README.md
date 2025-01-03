@@ -36,7 +36,7 @@ Firstly, we will set up your PC to program your ATTiny85.
 
 1. **WINDOWS ONLY!** - Download and install the latest [Digistump Arduino Driver Release](https://github.com/digistump/DigistumpArduino/releases) by running `Install Drivers.exe`.
 2. Download the latest version of [Arduino IDE](https://docs.arduino.cc/software/ide/).
-3. After install, go to `File > Preferences` and under `Additional boards manager URLs` insert the following URL: `https://raw.githubusercontent.com/0xnarwhal/BadUSB/refs/heads/main/package_digistump_index.js`. If the link no longer works for some reason, I have included the file in this repository. If you can't troubleshoot something like this, please educate yourself first before continuing.
+3. After install, go to `File > Preferences` and under `Additional boards manager URLs` insert the following URL: `https://raw.githubusercontent.com/0xnarwhal/BadUSB/refs/heads/main/package_digistump_index.json`. If the link no longer works for some reason, I have included the file in this repository. If you can't troubleshoot something like this, please educate yourself first before continuing.
    1. ![File to Preference](./img/file_to_preferences.png)
    2. ![Additional Board Manager](./img/additional_boards_manager.png)
    3. > NOTE: If there is already a URL, you can insert multiple URLs by separating them with a semi-colon `;`.
