@@ -2,13 +2,15 @@
 
 ## Changelogs
 
-> 21/08/2024 - Revisited this project and want a proper close and end to it. So, this marks the final update to the guide and closure of the project. Minor updates will be posted.
+> 03/01/2025 - Making final changes to the project. Repo will be archived and no longer updated. Refer to the [product site](https://badusb.digitisedgarden.com) or [documentation site](https://docs.digitisedgarden.com/BadUSB.html) for more info. <br> 21/08/2024 - Revisited this project and want a proper close and end to it. So, this marks the final update to the guide and closure of the project. Minor updates will be posted.
 
 ## DISCLAIMER
 
 This framework guide is intended for **educational purposes only!** Malicious use of this framework is **NOT** encouraged. If you wish to perform of the actions shown on property that you do not own, ensure you have prior approval from the rightful owner.
 
-Remember: **hack responsibly.**
+Remember: **Hack Responsibly.**
+
+> Most of the payloads and scripts were not made by me. This is a collection of my favorite scripts out there and modified to suit this framework. To see the original creators, head over to the `Credits` section of this document.
 
 ## About The Framework
 
@@ -20,25 +22,21 @@ This framework is your one-stop-shop to get you up and running to create malicio
 
 With this guide you will be using this repository in your private VPS (we will be using Digital Ocean) and setting up your "hacker server".
 
-### Disclaimer
-
-> None of this is originally made by me. This is a collection of my favourite scripts out there and modified to suit this framework. To se the original creators, head over to the `Credits` section of this document.
-
 ## Pre-Requisites
 
 You will need the following:
 
-1. ATTiny85 Micro Controller (You can purchase one online for cheap)
+1. ATTiny85 Micro Controller USB Device (You can purchase one online for cheap or make your own. There are countless sellers and tutorials out there)
 2. A [Digital Ocean](https://digitalocean.com) account
-3. A computer (Obviously)
+3. A computer. This guide is written with the use of [Kali Linux OS](https://kali.org) in mind, but it should work with any OS.
 
 ## Setting Up your PC
 
 Firstly, we will set up your PC to program your ATTiny85.
 
-1. Download and install the latest [Digistump Arduino Release](https://github.com/digistump/DigistumpArduino/releases) by running `Install Drivers.exe`.
+1. **WINDOWS ONLY!** - Download and install the latest [Digistump Arduino Driver Release](https://github.com/digistump/DigistumpArduino/releases) by running `Install Drivers.exe`.
 2. Download the latest version of [Arduino IDE](https://docs.arduino.cc/software/ide/).
-3. After install go to `File > Preferences` and under `Additional boards manager URLs` insert the following URL: `https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json`.
+3. After install, go to `File > Preferences` and under `Additional boards manager URLs` insert the following URL: `https://raw.githubusercontent.com/0xnarwhal/BadUSB/refs/heads/main/package_digistump_index.js`. If the link no longer works for some reason, I have included the file in this repository. If you can't troubleshoot something like this, please educate yourself first before continuing.
    1. ![File to Preference](./img/file_to_preferences.png)
    2. ![Additional Board Manager](./img/additional_boards_manager.png)
    3. > NOTE: If there is already a URL, you can insert multiple URLs by separating them with a semi-colon `;`.
@@ -94,7 +92,7 @@ Now we can focus on programming your malicious USB. Back to your personal comput
 
 ## The Attack
 
-Now all you need to do is plug in your `Bad USB` on your victim's machine and let the magic happen. On your attacker machine, you should be able to see a connection being made from the victims machine. This means that the payload has been downloaded and if all goes well you should be able to obtain a persistent reverse shell by running:
+Now all you need to do is plug in your `BadUSB` on your victim's machine and let the magic happen. On your attacker machine, you should be able to see a connection being made from the victims machine. This means that the payload has been downloaded and if all goes well you should be able to obtain a persistent reverse shell by running:
 
 ```bash
 nc -lnvp 4444
@@ -128,7 +126,7 @@ It will return with all the different files and you can view them as if they wer
 
 ## Moving On
 
-This is just the start for you. Go crazy. But remember: **hack responsibly**. Have fun suckers - *narwhal*
+This is just the start for you. Go crazy. But remember: **Hack Responsibly**. Have fun suckers - *narwhal*
 
 ## Credits
 
